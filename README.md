@@ -1,4 +1,3 @@
-# Getting Start
 # Requirement
 |Name  | Recommended version(s)|   
 |------|-----------------------|
