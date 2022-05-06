@@ -15,6 +15,7 @@ curl -X GET 'https://bicycle-rental/user/5/
 ```
 
 #### **Successful response**
+return status code **200**
 ```
 {
     'data': {
@@ -45,6 +46,7 @@ curl -X POST 'https://bicycle-rental/user/5/
     }'
 ```
 #### **Successful response**
+return status code **200**
 ```
 {
     'data': {

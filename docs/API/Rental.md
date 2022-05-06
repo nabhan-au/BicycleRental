@@ -12,7 +12,9 @@ Rent the bicycle with bicycle id and user id
 |------|------|-------------|
 |  id  | String | id of bicycle|
 
-### Example requests
+
+<!-- tabs:start -->
+#### **Example requests**
 ```
 curl --request POST 
   --url https://bicycle-rental/rent
@@ -22,7 +24,7 @@ curl --request POST
             'bicycle-id': 1 
           }'
 ```
-<!-- tabs:start -->
+
 #### **Success response**
 return status code **200**
 ```
@@ -48,7 +50,8 @@ Cancel renting the bicycle with specific id
 |------|------|-------------|
 |  id  | Integer | id of bicycle|
 
-### Example requests
+<!-- tabs:start -->
+#### **Example requests**
 ```
 curl --request POST 
   --url https://bicycle-rental/rent/cancel
@@ -58,7 +61,7 @@ curl --request POST
             'bicycle-id': 1 
           }'
 ```
-<!-- tabs:start -->
+
 #### **Success response**
 return status code **200**
 ```
