@@ -4,7 +4,7 @@
 |Python | 3.8 or higher |
 
 # Document
-API Documentation: https://nabhan-au.github.io/BicycleRental/
+Web Service API: https://nabhan-au.github.io/BicycleRental/
 
 
 # Install pacakage
