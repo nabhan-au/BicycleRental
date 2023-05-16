@@ -27,4 +27,4 @@ class Users(Base):
         return f"<User(firstname={self.firstname}, lastname={self.lastname}, age={self.age})>"
 
     def __eq__(self, other):
-        return self.id == self.id
+        return self.id == other.id
