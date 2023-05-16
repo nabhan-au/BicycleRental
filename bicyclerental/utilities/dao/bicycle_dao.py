@@ -1,7 +1,7 @@
 from typing import Any, List, Union
 from sqlalchemy.orm.session import Session
-from models.bicycle_model import Bicycle
-from utilities.dao.abstract_dao import DAO
+from bicyclerental.models.bicycle_model import Bicycle
+from bicyclerental.utilities.dao.abstract_dao import DAO
 from sqlalchemy.orm.query import Query
 
 class BicycleDAO(DAO):
@@ -12,6 +12,7 @@ class BicycleDAO(DAO):
             session (Session): session object that use to connect with database.
         """
         self.__model = Bicycle
+        self.test_session = session
         super().__init__(session, self.__model)
         
     def get_bicycle_from_id(self, id: int) -> Union[List[Any], None]:
@@ -27,7 +28,7 @@ class BicycleDAO(DAO):
         return result
     
     def get_bicycle_from_brand(self, brand: str) -> Union[List[Any], None]:
-        """This function return return List of Bicycle by getting brand.
+        """This function return List of Bicycle by getting brand.
 
         Args:
             brand (str): brand of bicycle.
@@ -39,7 +40,7 @@ class BicycleDAO(DAO):
         return result
     
     def get_bicycle_from_type(self, type: str) -> Union[List[Any], None]:
-        """This function return return List of Bicycle by getting type.
+        """This function return List of Bicycle by getting type.
         Args:
             type (str): type of bicycle.
 

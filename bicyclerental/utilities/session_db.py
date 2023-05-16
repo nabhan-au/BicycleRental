@@ -1,13 +1,13 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from utilities.dao.bicycle_dao import BicycleDAO
+from bicyclerental.utilities.dao.bicycle_dao import BicycleDAO
 
-from utilities.dao.users_dao import UsersDao
+from bicyclerental.utilities.dao.users_dao import UsersDao
 
 class SessionDB:
 
-    def __init__(self) -> None:
-        self.__engine = create_engine('sqlite:///rental.db', echo=True)
+    def __init__(self, db_connection_string) -> None:
+        self.__engine = create_engine(db_connection_string, echo=True)
         session = sessionmaker(bind=self.__engine)
         self.__session = session()
 

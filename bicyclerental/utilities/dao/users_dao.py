@@ -1,7 +1,7 @@
 from typing import Any, List, Union
 from sqlalchemy.orm.session import Session
-from models.users_model import Users
-from utilities.dao.abstract_dao import DAO
+from bicyclerental.models.users_model import Users
+from bicyclerental.utilities.dao.abstract_dao import DAO
 from sqlalchemy.orm.query import Query 
 
 class UsersDao(DAO):
